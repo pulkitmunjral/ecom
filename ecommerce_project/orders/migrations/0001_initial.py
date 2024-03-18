@@ -9,7 +9,6 @@ class Migration(migrations.Migration):
     initial = True
 
     dependencies = [
-        ('users', '0001_initial'),
         ('cart', '0001_initial'),
     ]
 
@@ -40,6 +39,6 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='order',
             name='user',
-            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='users.user'),
+            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='cart.cartitem'),
         ),
     ]

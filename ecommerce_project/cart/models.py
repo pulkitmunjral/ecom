@@ -1,7 +1,7 @@
 from django.db import models
 
 class Cart(models.Model):
-    user = models.OneToOneField("users.User", on_delete=models.CASCADE)
+    user = models.OneToOneField("customers.Customer", on_delete=models.CASCADE)
     storefront = models.ForeignKey("storefronts.Storefront", on_delete=models.CASCADE)  # Reference to the storefront
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)

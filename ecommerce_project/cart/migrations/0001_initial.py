@@ -9,7 +9,6 @@ class Migration(migrations.Migration):
     initial = True
 
     dependencies = [
-        ('users', '0001_initial'),
         ('storefronts', '0001_initial'),
         ('products', '0001_initial'),
     ]
@@ -22,7 +21,7 @@ class Migration(migrations.Migration):
                 ('created_at', models.DateTimeField(auto_now_add=True)),
                 ('updated_at', models.DateTimeField(auto_now=True)),
                 ('storefront', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='storefronts.storefront')),
-                ('user', models.OneToOneField(on_delete=django.db.models.deletion.CASCADE, to='users.user')),
+                ('user', models.OneToOneField(on_delete=django.db.models.deletion.CASCADE, to='storefronts.storefront')),
             ],
         ),
         migrations.CreateModel(
