@@ -1,6 +1,1 @@
-1. we can onboard a client
-2. then that client can have multiple storefronts as standalone ecomerc like one for school merch and another for college merchandise
-3. Each store can have multiple categories as in men’s wear, women’s wear etc
-4. Each category can have different products, sizes, discounts
-5. Actual customers can use these storefront to order products
-6. Payment system should be there
+Swagger link: http://localhost:8000/api/docs/
