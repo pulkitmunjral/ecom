@@ -5,6 +5,6 @@ from .views import StorefrontViewSet
 app_name = 'storefronts'
 
 urlpatterns = [
-    path('storefronts/', StorefrontViewSet.as_view({'get': 'list', 'post': 'create'}), name='storefront-list'),
+    path('', StorefrontViewSet.as_view({'get': 'list', 'post': 'create'}), name='storefront-list'),
     # Add more URLs specific to the storefronts app if needed
 ]

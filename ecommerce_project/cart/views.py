@@ -5,9 +5,11 @@ from .serializers import CartItemSerializer
 from orders.models import Order, OrderedItem
 from orders.serializers import OrderSerializer
 
+
 class CartItemAPIView(generics.ListCreateAPIView):
     queryset = CartItem.objects.all()
     serializer_class = CartItemSerializer
+
 
 class CartItemDetailAPIView(generics.RetrieveUpdateDestroyAPIView):
     queryset = CartItem.objects.all()

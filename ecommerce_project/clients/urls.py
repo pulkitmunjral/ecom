@@ -5,6 +5,6 @@ from .views import CompanyViewSet
 app_name = 'clients'
 
 urlpatterns = [
-    path('companies/', CompanyViewSet.as_view({'get': 'list', 'post': 'create'}), name='company-list'),
+    path('', CompanyViewSet.as_view({'get': 'list', 'post': 'create'}), name='company-list'),
     # Add more URLs specific to the clients app if needed
 ]
